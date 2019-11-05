@@ -2,54 +2,41 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeeee;
+}
+
 #fizzbuzz-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .circle {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #640606ba;
   width: 215px;
   height: 215px;
   border-radius: 50%;
   margin: 15px;
   cursor: pointer;
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: fantasy;
 }
 
 .circle:nth-child(3n) {
-  background-color: green;
-}
-
-.circle:nth-child(3n)::before {
-  content: "FIZZ";    
-  position: relative;
-  top: 100px;
-  left: 90px;
-  color: white;
-}
-
-.circle:nth-child(5n)::before {
-  content: "BUZZ";    
-  position: relative;
-  top: 100px;
-  left: 87px;
-  color: white;
-}
-  
-.circle:nth-child(15n)::before {
-  content: "FIZZBUZZ";    
-  position: relative;
-  top: 100px;
-  left: 71px;
-  color: white;
+  background-color: #593766;
 }
 
 .circle:nth-child(5n) {
-  background-color: blue;
+  background-color: #35354d;
 }
 
 .circle:nth-child(15n) {
-  background-color: pink;
+  background-color: #ba8790;
 }
 
 .circle:hover {
@@ -58,8 +45,4 @@
   border: 2px solid black;
 }
 
-.circle:nth-child(3n):hover::before,
-.circle:nth-child(5n):hover::before 
-{
-  color: black;
-}
+
